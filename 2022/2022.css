@@ -101,7 +101,7 @@
      z-index: 1;
      top: 15.6%;
      left: -250px;
-     background-color: tr;
+     background-color: transparent;
      background-size: auto;
      padding-top: 60px;
      transition: left 0.5s ease;
@@ -279,4 +279,12 @@ a.Accueil{
 .prev2:hover,
 .next2:hover {
   background-color: rgb(31, 30, 30);
+}
+
+
+
+
+.text{
+ 
+  color: white;
 }
