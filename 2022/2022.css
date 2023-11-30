@@ -11,7 +11,7 @@
 }
  
  #Haut{
-     background-color: #332F2F;
+     background-color: transparent;
      width: 100%;
      height: 110px;
      flex-shrink: 0;
@@ -19,7 +19,7 @@
  
  .accueil{
    -webkit-text-stroke: 3px #000000;
-   color: white;
+   color: blue;
    background-color: transparent;
    border-color: transparent;
    font-family: "Inter-Regular", Helvetica;
@@ -101,7 +101,7 @@
      z-index: 1;
      top: 15.6%;
      left: -250px;
-     background-color: black;
+     background-color: tr;
      background-size: auto;
      padding-top: 60px;
      transition: left 0.5s ease;
@@ -173,7 +173,7 @@
  }
  
 a.Accueil{
-    color: white;
+    color: rgb(241, 200, 13)
 } 
 
 .cadre {
