@@ -3,11 +3,12 @@
  }
  
  
- body{
-     background-image: url("/img/elden.png");
-     background-size: cover;
- 
- }
+ body {
+  background-image: url("/img/Elden_ring.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
  
  #Haut{
      background-color: #332F2F;
@@ -94,16 +95,18 @@
  }
  
  .sidenav {
-     height: 100%;
+     height: 150%;
      width: 250px;
-     position: fixed;
+     position: absolute;
      z-index: 1;
-     top: 14%;
+     top: 15.6%;
      left: -250px;
-     background-image: url(/img/vertical3.jpg);
+     background-color: black;
      background-size: auto;
      padding-top: 60px;
      transition: left 0.5s ease;
+     border-top-right-radius: 2px;
+     border-bottom-right-radius: 30px;
    }
    
    /* Sidenav menu links */
@@ -172,3 +175,108 @@
 a.Accueil{
     color: white;
 } 
+
+.cadre {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  flex-shrink: 0;
+  left: 4%;
+  top: 1%;
+  border-radius: 45px;
+  border: 8px solid rgb(248, 216, 7);
+  transform: translate(135%, 80%);
+}
+
+.cadre2 {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  flex-shrink: 0;
+  left: 13%;
+  border-radius: 45px;
+  border: 8px solid rgb(248, 216, 7);
+  transform: translate(10%, 200%);
+}
+
+.image{
+  width:601px;
+  border-radius: 33px;
+  height: 300px;
+
+  
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 54%;
+  left: 96%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px ;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 54%;
+  left: 59.3%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgb(31, 30, 30);
+}
+
+.image2{
+  width:601px;
+  border-radius: 33px;
+  height: 300px;
+}
+
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 125%;
+  left: 54.3%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px ;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev2{
+  cursor: pointer;
+  position: absolute;
+  top: 125%;
+  left: 17.7%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev2:hover,
+.next2:hover {
+  background-color: rgb(31, 30, 30);
+}
