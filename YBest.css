@@ -79,12 +79,13 @@ body{
     position: absolute;
     height: 72px;
     top: 240px;
-    left: 333px;
+    left: 270px;
     color: white;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0;
     line-height: normal;
+    font-weight: 900;
 }
 
 .sidenav {
@@ -148,6 +149,7 @@ body{
   }
 
  .logo-burger{
+    position: absolute;
     height: 120px;
   }
   
@@ -163,6 +165,18 @@ body{
 }
 
 .Vidéo {
-  margin-left: 55%;
+  position: absolute;
+  margin-left: 59%;
   margin-top: 8%;
   }
+
+  .opaque {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: black;
+    opacity: 0.5;
+  }
+   

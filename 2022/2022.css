@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  top: 0;
 }
  
  #Haut{
@@ -16,10 +17,18 @@
      height: 110px;
      flex-shrink: 0;
  }
+ .opaque {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: black;
+  opacity: 0.5;
+}
  
  .accueil{
-   -webkit-text-stroke: 3px #000000;
-   color: blue;
+   -webkit-text-stroke: 3px #000000;;
    background-color: transparent;
    border-color: transparent;
    font-family: "Inter-Regular", Helvetica;
@@ -49,7 +58,6 @@
    box-shadow: none;
    transform: translateY(0);
  }
- 
  
  
  
@@ -95,7 +103,7 @@
  }
  
  .sidenav {
-     height: 150%;
+     height: 80%;
      width: 250px;
      position: absolute;
      z-index: 1;
@@ -120,7 +128,7 @@
    }
    
    .sidenav a:hover {
-     color: rgb(0, 145, 255);
+     color: rgb(255, 255, 0);
    }
    
    .sidenav ul {
@@ -158,6 +166,7 @@
    }
  
   .logo-burger{
+    position: absolute;
      height: 120px;
    }
    
@@ -173,7 +182,11 @@
  }
  
 a.Accueil{
-    color: rgb(241, 200, 13)
+  font-family: serif;
+    color: rgb(241, 200, 13);
+    text-shadow: 0 0 54px rgb(198, 231, 12);
+    font-weight: bold;
+    -webkit-text-stroke: 2px rgb(241, 200, 13);
 } 
 
 .cadre {
@@ -193,7 +206,19 @@ a.Accueil{
   width: 600px;
   height: 300px;
   flex-shrink: 0;
-  left: 13%;
+  left: 9%;
+  top: 20%;
+  border-radius: 45px;
+  border: 8px solid rgb(248, 216, 7);
+  transform: translate(10%, 200%);
+}
+
+.cadre3 {
+  position: absolute;
+  width: 1300px;
+  height: 180px;
+  flex-shrink: 0;
+  top: 130%;
   border-radius: 45px;
   border: 8px solid rgb(248, 216, 7);
   transform: translate(10%, 200%);
@@ -250,8 +275,8 @@ a.Accueil{
 .next2 {
   cursor: pointer;
   position: absolute;
-  top: 125%;
-  left: 54.3%;
+  top: 128%;
+  left: 50.3%;
   width: auto;
   padding: 16px;
   color: white;
@@ -264,8 +289,8 @@ a.Accueil{
 .prev2{
   cursor: pointer;
   position: absolute;
-  top: 125%;
-  left: 17.7%;
+  top: 128%;
+  left: 13.6%;
   width: auto;
   padding: 16px;
   color: white;
@@ -281,10 +306,29 @@ a.Accueil{
   background-color: rgb(31, 30, 30);
 }
 
-
-
-
 .text{
- 
+  position: absolute;
   color: white;
+  font-size: 30px;
+  margin-left: 13%;
+  margin-top: 13%;
+  
+}
+
+.text2{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  margin-left: 57%;
+  margin-top: 45%;;
+}
+
+.text3{
+  color: white;
+  font-size: 30px;
+  margin-left: 2%;
+  margin-top: 0.5%;
+  font-weight: 900;
+
+
 }
