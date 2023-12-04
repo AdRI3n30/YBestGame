@@ -33,9 +33,9 @@
    border-color: transparent;
    font-family: "Inter-Regular", Helvetica;
    font-size: 64px;
-   font-weight: 400;
+   font-weight: 400px;
    height: 96px;
-   left: 38%;
+   left: 39%;
    letter-spacing: 0;
    line-height: normal;
    position: absolute;
@@ -191,10 +191,10 @@ a.Accueil{
 
 .cadre {
   position: absolute;
-  width: 600px;
-  height: 300px;
+  width: 32%;
+  height: 37.5%;
   flex-shrink: 0;
-  left: 4%;
+  left: 18%;
   top: 1%;
   border-radius: 45px;
   border: 8px solid rgb(248, 216, 7);
@@ -203,8 +203,8 @@ a.Accueil{
 
 .cadre2 {
   position: absolute;
-  width: 600px;
-  height: 300px;
+  width: 32%;;
+  height:37.5%;
   flex-shrink: 0;
   left: 9%;
   top: 20%;
@@ -215,7 +215,7 @@ a.Accueil{
 
 .cadre3 {
   position: absolute;
-  width: 1300px;
+  width: 81.8%;
   height: 180px;
   flex-shrink: 0;
   top: 130%;
@@ -225,9 +225,9 @@ a.Accueil{
 }
 
 .image{
-  width:601px;
+  width:100%;
   border-radius: 33px;
-  height: 300px;
+  height: 100%;
 
   
 }
@@ -235,8 +235,8 @@ a.Accueil{
 .next {
   cursor: pointer;
   position: absolute;
-  top: 54%;
-  left: 96%;
+  top: 50%;
+  left: 92.5%;
   width: auto;
   padding: 16px;
   color: white;
@@ -249,8 +249,8 @@ a.Accueil{
 .prev{
   cursor: pointer;
   position: absolute;
-  top: 54%;
-  left: 59.3%;
+  top: 50%;
+  left: 62.8%;
   width: auto;
   padding: 16px;
   color: white;
@@ -267,16 +267,16 @@ a.Accueil{
 }
 
 .image2{
-  width:601px;
+  width:100%;
   border-radius: 33px;
-  height: 300px;
+  height: 100%;
 }
 
 .next2 {
   cursor: pointer;
   position: absolute;
-  top: 128%;
-  left: 50.3%;
+  top: 116%;
+  left: 42.5%;
   width: auto;
   padding: 16px;
   color: white;
@@ -289,8 +289,8 @@ a.Accueil{
 .prev2{
   cursor: pointer;
   position: absolute;
-  top: 128%;
-  left: 13.6%;
+  top: 116%;
+  left: 12.7%;
   width: auto;
   padding: 16px;
   color: white;
@@ -309,7 +309,7 @@ a.Accueil{
 .text{
   position: absolute;
   color: white;
-  font-size: 30px;
+  font-size: 1.8rem;
   margin-left: 13%;
   margin-top: 13%;
   
@@ -318,17 +318,14 @@ a.Accueil{
 .text2{
   position: absolute;
   color: white;
-  font-size: 30px;
+  font-size: 1.8rem;
   margin-left: 57%;
   margin-top: 45%;;
 }
 
 .text3{
   color: white;
-  font-size: 30px;
+  font-size: 1.8rem;
   margin-left: 2%;
-  margin-top: 0.5%;
-  font-weight: 900;
-
-
+  margin-top: 1.45%;
 }

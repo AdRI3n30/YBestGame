@@ -89,14 +89,14 @@ body{
 }
 
 .sidenav {
-    height: 537px ;
+    height: 79.6%;
     width: 250px;
     position: absolute;
     z-index: 1;
-    top: 15.6%;
+    top: 6.8rem;
     left: -250px;
     background-image: url(/img/vertical.jpg);
-    padding-top: 60px;
+    padding-top: 4%;
     transition: left 0.5s ease;
   }
   
