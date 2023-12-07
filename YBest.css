@@ -135,12 +135,12 @@ body{
   
   /* Icône burger */
   .burger-icon{
-    height: 100px;
-    left: 15px;
+    height: 80px;
+    left: 1.1%;
     object-fit: cover;
     position: fixed;
-    top: 1%;
-    width: 100px;
+    top: 1.8%;
+    width: 90px;
     background-color:transparent;
     box-shadow: none;
     border-radius: 30%;
