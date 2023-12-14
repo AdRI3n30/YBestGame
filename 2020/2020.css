@@ -4,7 +4,9 @@
 
  @font-face {
   font-family: 'cyberpunk';
-  src: url(/);
+  src: url("/font/Cyberpunk/Cyberpunk.otf") format("truetype"), url("/font/Cyberpunk/Cyberpunk.ttf") format("ttf");
+  font-weight: normal;
+  font-size: normal;
  }
  
  
@@ -198,6 +200,7 @@
   text-decoration: underline;
   font-size: 80px;
   animation: colorRotate 6s linear 0s infinite;
+  font-family: 'cyberpunk';
 }
 
 @keyframes colorRotate {
@@ -221,7 +224,8 @@ from {
 
 h2 {
   text-align: center;
-  margin-left: -9%;
+  margin-left: -30%;
+  margin-top: -2%;
 }
 
 
@@ -702,22 +706,34 @@ h2 {
   position: relative;
 }
 
-/*Boutton numero 1*/
+/*Boutton numero 1====================================================================================================================================================================*/
 
-.V{
+
+.bloc-V{
+  margin-left: -600%;
+}
+
+
+.bloc-V .V{
   width: 450px;
   margin-left: 38%;
-  margin-top: -30%;
+  margin-top: -31.2%;
 }
 
 .bloc-V p{
   color:#ff1111;
+  text-shadow:1.9px 1px #00F0FF;
   font-size: 30px;
   line-height: normal;
   font-weight: 600;
   font-family: "Inter-Regular", Helvetica;
   margin-left: 18%;
-  margin-top: -30%;
+  margin-top: -26%;
+}
+
+
+.bloc-V.active{
+  margin-left: 0%;
 }
 
 .cybr-btn {
@@ -895,7 +911,36 @@ h2 {
 }
 
 
-/*Boutton numero 2*/
+/*Boutton numero 2=================================================================================================================================================================*/
+
+.bloc-Ja{
+  margin-left: -600%;
+}
+
+
+.bloc-Ja .Ja{
+  width: 450px;
+  margin-left: 18%;
+  margin-top: -31.2%;
+}
+
+.bloc-Ja p{
+  color:#441fa1;
+  text-shadow:1.9px 1px #00F0FF;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 600;
+  font-family: "Inter-Regular", Helvetica;
+  margin-left: 42%;
+  margin-top: -32%;
+}
+
+
+.bloc-Ja.active{
+  margin-left: 0%;
+}
+
+
 .cybr-btn2 {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -1014,7 +1059,34 @@ h2 {
 
 
 
-/*Boutton numero 3*/
+/*Boutton numero 3=======================================================================================================================================================================================*/
+.bloc-Jo{
+  margin-left: -600%;
+}
+
+
+.bloc-Jo .Jo{
+  width: 400px;
+  margin-left: 50%;
+  margin-top: -30.2%;
+}
+
+.bloc-Jo p{
+  color:#0546fa;
+  text-shadow:1.9px 1px #fded00;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 600;
+  font-family: "Inter-Regular", Helvetica;
+  margin-left: 12%;
+  margin-top: -32%;
+}
+
+
+.bloc-Jo.active{
+  margin-left: 0%;
+}
+
 .cybr-btn3 {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
