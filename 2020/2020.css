@@ -1,6 +1,11 @@
 *{
     margin: 0;
  }
+
+ @font-face {
+  font-family: 'cyberpunk';
+  src: url(/);
+ }
  
  
  body{
@@ -216,7 +221,7 @@ from {
 
 h2 {
   text-align: center;
-  margin-top: -0%;
+  margin-left: -9%;
 }
 
 
@@ -698,6 +703,23 @@ h2 {
 }
 
 /*Boutton numero 1*/
+
+.V{
+  width: 450px;
+  margin-left: 38%;
+  margin-top: -30%;
+}
+
+.bloc-V p{
+  color:#ff1111;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 600;
+  font-family: "Inter-Regular", Helvetica;
+  margin-left: 18%;
+  margin-top: -30%;
+}
+
 .cybr-btn {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -734,7 +756,8 @@ h2 {
   height: 75px;
   line-height: 75px;
   transition: background 0.2s;
-  margin-top: 2%;
+  margin-top: 6%;
+  margin-left: 79%;
 }
 
 .cybr-btn:hover {
@@ -910,6 +933,7 @@ h2 {
   line-height: 75px;
   transition: background 0.2s;
   margin-top: 6%;
+  margin-left: 79%;
 }
 
 .cybr-btn2:hover {
@@ -1028,6 +1052,7 @@ h2 {
   line-height: 75px;
   transition: background 0.2s;
   margin-top: 6%;
+  margin-left: 79%;
 }
 
 .cybr-btn3:hover {
