@@ -1,16 +1,44 @@
 *{
     margin: 0;
  }
- 
- 
- body{
-    background-image: url("/img/cyberpunk.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100%;
- 
+
+
+ @font-face {
+  font-family: 'cyberpunk';
+  src: url("/font/Cyberpunk/Cyberpunk.otf") format("truetype"), url("/font/Cyberpunk/Cyberpunk.ttf") format("ttf");
+  font-weight: normal;
+  font-size: normal;
  }
+
+
+
+ .parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax1 {
+  height: 140vh;
+  background-image: url("/img/cyberpunk.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100%;
+}
+
+.parallax2 {
+  height: 190vh;
+  background-image: url("/img/msg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100%;
+}
+
+ 
  
  #Haut{
      background-color: transparent;
@@ -27,7 +55,8 @@
   right: 0px;
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 32.6%, rgba(255, 255, 255, 0) 63.85%)
 }
- 
+
+
  .accueil{
    -webkit-text-stroke: 3px #000000;
    color: white;
@@ -106,9 +135,9 @@
  }
  
  .sidenav {
-     height: 100%;
+     height: 50%;
      width: 250px;
-     position: fixed;
+     position: absolute;
      z-index: 1;
      top: 15.6%;
      left: -250px;
@@ -117,6 +146,7 @@
      background-color: rgba(174, 174, 174, 0.2);
      backdrop-filter: blur(10px);
      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+     border-top-right-radius: 26px;
    }
    
    /* Sidenav menu links */
@@ -193,7 +223,10 @@
   text-decoration: underline;
   font-size: 80px;
   animation: colorRotate 6s linear 0s infinite;
+  font-family: 'cyberpunk';
 }
+
+/* Effet rgb ===============================================================================================================================*/
 
 @keyframes colorRotate {
 from {
@@ -216,7 +249,8 @@ from {
 
 h2 {
   text-align: center;
-  margin-top: -0%;
+  margin-left: -30%;
+  margin-top: -2%;
 }
 
 
@@ -262,6 +296,8 @@ h2 {
   color: #1bc7fb;
 }
 
+
+/* Mouvement du logo = effet glitch========================================================================================================*/
 .single-path {
   clip-path: polygon(
     0% 12%,
@@ -572,7 +608,7 @@ h2 {
 }
 
 .movement {
-  /* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
+ 
   position: relative;
   animation: movement 8s step-end infinite;
 }
@@ -697,7 +733,39 @@ h2 {
   position: relative;
 }
 
-/*Boutton numero 1*/
+
+
+
+/*Boutton numero 1====================================================================================================================================================================*/
+
+
+.bloc-V{
+  margin-left: -600%;
+}
+
+
+.bloc-V .V{
+  width: 450px;
+  margin-left: 38%;
+  margin-top: -32.2%;
+}
+
+.bloc-V p{
+  color:#ff1111;
+  text-shadow:1.9px 1px #00F0FF;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 600;
+  font-family: "Inter-Regular", Helvetica;
+  margin-left: 18%;
+  margin-top: -27%;
+}
+
+
+.bloc-V.active{
+  margin-left: 0%;
+}
+
 .cybr-btn {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -725,7 +793,6 @@ h2 {
   background: transparent;
   text-transform: uppercase;
   font-size: var(--font-size);
-  outline: transparent;
   letter-spacing: 2px;
   position: relative;
   font-weight: 700;
@@ -733,8 +800,9 @@ h2 {
   min-width: 300px;
   height: 75px;
   line-height: 75px;
-  transition: background 0.2s;
-  margin-top: 2%;
+  transition: background 0.5s;
+  margin-top: 18%;
+  margin-left: 79%;
 }
 
 .cybr-btn:hover {
@@ -759,10 +827,12 @@ h2 {
 .cybr-btn:before {
   background: var(--shadow-primary);
   transform: translate(var(--border), 0);
+  position: absolute;
 }
 
 .cybr-btn:after {
   background: var(--primary);
+  position: absolute;
 }
 
 .cybr-btn__tag {
@@ -872,7 +942,36 @@ h2 {
 }
 
 
-/*Boutton numero 2*/
+/*Boutton numero 2=================================================================================================================================================================*/
+
+.bloc-Ja{
+  margin-left: -600%;
+}
+
+
+.bloc-Ja .Ja{
+  width: 450px;
+  margin-left: 18%;
+  margin-top: -31.2%;
+}
+
+.bloc-Ja p{
+  color:#441fa1;
+  text-shadow:1.9px 1px #00F0FF;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 600;
+  font-family: "Inter-Regular", Helvetica;
+  margin-left: 42%;
+  margin-top: -32%;
+}
+
+
+.bloc-Ja.active{
+  margin-left: 0%;
+}
+
+
 .cybr-btn2 {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -910,6 +1009,7 @@ h2 {
   line-height: 75px;
   transition: background 0.2s;
   margin-top: 6%;
+  margin-left: 79%;
 }
 
 .cybr-btn2:hover {
@@ -990,7 +1090,34 @@ h2 {
 
 
 
-/*Boutton numero 3*/
+/*Boutton numero 3=======================================================================================================================================================================================*/
+.bloc-Jo{
+  margin-left: -600%;
+}
+
+
+.bloc-Jo .Jo{
+  width: 400px;
+  margin-left: 50%;
+  margin-top: -30.2%;
+}
+
+.bloc-Jo p{
+  color:#0546fa;
+  text-shadow:1.9px 1px #fded00;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 600;
+  font-family: "Inter-Regular", Helvetica;
+  margin-left: 12%;
+  margin-top: -32%;
+}
+
+
+.bloc-Jo.active{
+  margin-left: 0%;
+}
+
 .cybr-btn3 {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -1028,6 +1155,7 @@ h2 {
   line-height: 75px;
   transition: background 0.2s;
   margin-top: 6%;
+  margin-left: 79%;
 }
 
 .cybr-btn3:hover {
@@ -1104,3 +1232,73 @@ h2 {
 .cybr-btn3:nth-of-type(1) {
   --primary-hue: 590;
 }
+
+
+/*=======================================================================================================================================================*/
+
+
+/*Texte-résumé*/
+
+
+
+.cadre{
+  border: 3px solid#02d6f2ea;
+  border-radius: 40px 0px 40px 0px;
+  background-color: rgba(8, 140, 169, 0.467);
+  backdrop-filter: blur(10px);
+  margin-top: 54%;
+  margin-left: 2%;
+  max-width: 640px;
+  line-height: 1.4;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.triangle2{
+    content: ' ';
+    position: absolute;
+    margin-top: 130%;
+    margin-left: -0.4%;
+    border-top: 6px solid #02d7f2;
+    border-right: 7px solid transparent;
+  }
+.resumé{
+  color: #00e1ff;
+  font-size: 1.8rem;
+  margin: 2%;
+}
+
+
+/*Texte-Récompense*/
+
+
+.cadre2{
+  border: 3px solid#f2ea02ea;
+  border-radius: 0px 20px 0px 20px;
+  background-color: rgba(169, 161, 8, 0.467);
+  backdrop-filter: blur(10px);
+  max-width: 640px;
+  margin-left: 56%;
+  margin-bottom: 2%;
+  position: relative;
+}
+.triangle{
+  content: ' ';
+  position: absolute;
+  margin-top: 41%;
+  border-top: 6px solid #f2ea02ea;
+  left: 99.3%;
+  border-left: 7px solid transparent;
+}
+
+
+
+
+.recompense{
+  color: #f2ea02;
+  font-size: 1.8rem;
+  margin: 2%;
+}
+
+
+
