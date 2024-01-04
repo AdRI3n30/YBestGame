@@ -221,7 +221,7 @@ a.Accueil{
     border: 8px solid rgb(248, 216, 7);
     background: #ffffff00;
     mix-blend-mode: plus-darker;
-    transform: translate(180%, -110%);
+    transform: translate(130%, 40%);
   }
 }
 
@@ -315,7 +315,7 @@ a.Accueil{
     border: 8px solid rgb(248, 216, 7);
     background: #ffffff00;
     mix-blend-mode: plus-darker;
-    transform: translate(34%, -98%);
+    transform: translate(28%, 180%);
   }
 }
 
@@ -404,32 +404,56 @@ a.Accueil{
   flex-shrink: 0;
   border-radius: 45px;
   border: 8px solid rgb(248, 216, 7);
-  transform: translate(10%, 200%);
+  transform: translate(10%, 700%);
 }
 
 
 
-.text{
-  position: relative;
+main .p1{
+  position: absolute;
   color: white;
-  font-size: 1.8rem;
-  margin-left: 12%;
-  margin-top: 11%;
-  
+  font-size: 20px;
+  background-color: #00000031;
+  border: 4px solid rgb(248, 216, 7);
+  border-radius: 1.5rem ;
+  text-align: center;
+  width: 33%;
+  transform: translate(39%, 9rem);
 }
 
-.text2{
-  position: relative;
+main .p1:hover{
+font-size: 24px;
+width: 40%;
+background-color: #00000099;
+transition: ease-in-out 3s;
+
+}
+
+main .p2{
+  position: absolute;
   color: white;
-  font-size: 1.8rem;
-  margin-left: 51%;
-  margin-top: 10%;
+  font-size: 20px;
+  background-color: #00000031;
+  border: 4px solid rgb(248, 216, 7);
+  border-radius: 1.5rem ;
+  text-align: center;
+  gap: 1px;
+  width: 33%;
+  transform: translate(180%, 44rem);
+}
+
+main .p2:hover{
+  font-size: 24px;
+  transform: translate(180%,37rem);
+  background-color: #00000099;
+  transition: ease-in-out 3s;
 }
 
 .text3{
   color: white;
   font-size: 1.8rem;
   margin: 1%;
+
 }
 
 .recp{

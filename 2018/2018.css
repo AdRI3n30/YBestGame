@@ -141,7 +141,7 @@
       border: 8px solid #000000;
       background: #ffffff00;
       mix-blend-mode: plus-darker;
-      transform: translate(35%, -100%);
+      transform: translate(30%, -100%);
     }
   }
   
@@ -152,13 +152,10 @@
     height: 100%;
     }
 
-
-
-
     .card{
       width: 350px;
       height: 500px;
-      transform: translate(350%,40%);
+      transform: translate(320%,40%);
       perspective: -500px;
     }
 
@@ -175,10 +172,6 @@
       height: 100%;
       object-fit: cover;
     }
-
-
-
-
 
 
   .slide .item {
@@ -265,12 +258,6 @@
       background: #ffffff;
       color: #000000;
   }
-
-
-
-
-
-
 
     main .p1{
       position: absolute;

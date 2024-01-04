@@ -54,7 +54,8 @@ body {
 .video-accueil {
   width: 950px;
   height: 500px;
-  transform: translate(50%, 40%);
+  margin-left: 25%;
+  margin-top: 15%;
   position: relative;
   
 }
@@ -166,7 +167,7 @@ body {
     font-size: 35px;
     text-align: center;
     width: 70%;
-    transform: translate(21%, 14rem);
+    transform: translate(21%, 8rem);
   }
 
  main .text1 .jumpscare{
