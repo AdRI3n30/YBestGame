@@ -6,6 +6,7 @@
 body{
     background-image: url("img/fond.jpg");
     background-size: cover;
+    max-width: 100%;
 
 }
 
@@ -180,3 +181,25 @@ body{
     opacity: 0.5;
   }
    
+
+.button_secret{
+  position: absolute;
+  margin-top: 32%;
+  left: -250px; 
+  background-color: transparent;
+  transform : rotate(-180deg);
+}
+.button_secret.active {
+  left: 90%;
+  top: -81%;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+

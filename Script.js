@@ -3,17 +3,43 @@ var openBtn = document.getElementById("openBtn");
 var closeBtn = document.getElementById("closeBtn");
 
 
+var ET = document.getElementById("block_ET");
+var openBtn2 = document.getElementById("openBtn2");
+
 openBtn.onclick = openNav;
 closeBtn.onclick = closeNav;
 
 
+openBtn2.onclick = openNav2;
 
-/* Set the width of the side navigation to 250px */
+
+/*Barre */
+
 function openNav() {
   sidenav.classList.add("active");
 }
 
-/* Set the width of the side navigation to 0 */
+
 function closeNav() {
   sidenav.classList.remove("active");
 }
+
+
+/*Button secret*/
+
+function openNav2() {
+  if (ET.classList.contains("active")){
+    ET.classList.remove("active");
+}else{
+    ET.classList.add("active");
+}
+}
+
+
+function goToHell() {
+  document.body.style.animation = "fadeout 1s forwards";
+  setTimeout(function() {
+    window.location.href = "/YworstGame/YWorstGame.html";
+  }, 1000);
+}
+
