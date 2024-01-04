@@ -345,7 +345,7 @@
   /* Barre de nav*/
 
   .sidenav {
-    height: 50%;
+    height: 100%;
     width:  230px;
     position: absolute;
     z-index: 1;
@@ -353,7 +353,8 @@
     left: -250px;
     padding-top: 4%;
     transition: left 0.5s ease;
-    background-color: rgba(174, 174, 174, 0.2);
+    background-image: url("/img/verticalGodofwar.jpg");
+    background-size: cover;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     border-top-right-radius: 36px;
