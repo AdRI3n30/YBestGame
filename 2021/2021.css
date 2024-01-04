@@ -1,206 +1,210 @@
 *{
-    margin: 0;
- }
- 
- 
- body{
-    background-image: url(/img/Resident-Evil-Village-ss1.jpg);
-    background-size: cover;
+  margin: 0;
+} 
+
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    background-image:url(img/Resident-Evil-Village-ss1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 100%;
- 
- }
- 
- #Haut{
-     background: linear-gradient(to right, black, gray, grey, black);
-     width: 100%;
-     height: 110px;
-     flex-shrink: 0;
- }
+  }
 
- .opaque {
-  margin: 0;
+  .container {
+      width: 100%;
+  }
+}
+
+.degrade {
+    width: 100%;
+    height: 1000px;
+    top: -10px;
+    position: fixed;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 32.6%, rgba(255, 255, 255, 0) 63.85%)
+}
+
+
+
+@media only screen and (min-width: 620px) {
+.lienjump {
+  color : red;
+  font-style: normal;
+  font-weight: bold;
+}
+}
+
+
+.opaque {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: black;
+  background: rgba(255, 255, 255, 0) 63.85%;
   opacity: 0.5;
 }
-.degrade {
-  width: 100%;
+
+.video-accueil {
+  width: 950px;
   height: 500px;
-  position: absolute;
-  top: 110px;
-  right: 0px;
-  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 32.6%, rgba(255, 255, 255, 0) 63.85%)
+  transform: translate(29%, 42%);
 }
- 
- 
+
 .nom_du_jeu {
   position: relative;
   text-align: center;
   color: transparent;
   position: absolute;
-  top: 26%; /* Centre le texte verticalement */
-  left: 48.5%; /* Centre le texte horizontalement */
-  transform: translate(-50%, -20%); /* Ajuste la position du texte */
   font-size: 80px;
+  top: 5%;
+  left: 28%;
   font-style: normal;
   font-weight: bold;
   -webkit-text-stroke: 2px white;
 }
 
- .accueil{
-   -webkit-text-stroke: 3px #000000;
-   color: white;
-   background-color: transparent;
-   border-color: transparent;
-   font-family: "Inter-Regular", Helvetica;
-   font-size: 64px;
-   font-weight: 400;
-   height: 65px;
-   left: 38%;
-   letter-spacing: 0;
-   line-height: normal;
-   position: absolute;
-   text-align: center;
-   top: 3%;
-   width: 400px;
-   border: 0px;
- 
- } 
- 
- .accueil:disabled {
-   pointer-events: none;
- }
- 
- .accueil:hover {
-   transform: translateY(-2px);
- }
- 
- .accueil:active {
-   box-shadow: none;
-   transform: translateY(0);
- }
- 
- 
- .barre{
-     width: 100px;
-     height: 100px;
- }
- 
- .barre .barre-de-recherche{
-     height: 100px;
-     left: 15px;
-     object-fit: cover;
-     position: fixed;
-     top: 7px;
-     width: 100px;
- }
- 
- .Image{
-     width: 569;
-     height: 335;
- }
- 
- .Image .image-de-garde{
-     position: absolute;
-     width: 569;
-     height: 335;
-     top: 30%;
-     left: 55%;
-     object-fit: cover;
- }
- 
- .text-garde{
-     font-family: "Inter-Regular", Helvetica;
-     position: absolute;
-     height: 72px;
-     top: 240px;
-     left: 333px;
-     color: white;
-     font-size: 30px;
-     text-align: center;
-     letter-spacing: 0;
-     line-height: normal;
- }
- 
- .sidenav {
-     height: 100%;
-     width: 250px;
-     position: fixed;
-     z-index: 1;
-     top: 15.6%;
-     left: -250px;
-     background-color: BLACK;
-     padding-top: 60px;
-     transition: left 0.5s ease;
-   }
-   
-   /* Sidenav menu links */
-   .sidenav a {
-     padding: 8px 8px 8px 32px;
-     text-decoration: none;
-     font-size: 25px;
-     color: White;
-     display: block;
-     transition: 0.3s;
-   }
-   
-   .sidenav a:hover {
-     color: rgb(0, 145, 255);
-   }
-   
-   .sidenav ul {
-     list-style-type: none;
-     padding: 0;
-     margin: 0;
-   }
-   
-   /* Active class */
-   .sidenav.active {
-     left: 0;
-   }
-   
-   /* Close btn */
-   .sidenav .close {
-     position: absolute;
-     top: 0;
-     right: 25px;
-     font-size: 36px;
-   }
-   
-   /* Icône burger */
-   .burger-icon{
-     height: 100px;
-     left: 15px;
-     object-fit: cover;
-     position: fixed;
-     top: 1%;
-     width: 100px;
-     background-color:transparent;
-     box-shadow: none;
-     border-radius: 30%;
-     border-color: transparent;
- 
-   }
- 
-  .logo-burger{
-     height: 120px;
-   }
-   
- 
- .image_fond{
-     position: absolute;
-     width: 569;
-     height: 335;
-     top: 30%;
-     left: 55%;
-     object-fit: cover;
-     z-index: 1;
- }
- 
-a.Accueil{
+@media screen and (min-width: 320px) {
+.text {
+  position: relative;
+  text-align: left;
+  color: transparent;
+  position: absolute;
+  font-size: 4vh;
+  width: 70%;
+  height: 20%;
+  top: 105%;
+  left: 15%;
+  font-style: normal;
+  font-weight: bold;
+  color: #D9D9D9;
+}
+}
+
+@media only screen and (min-width: 620px) {
+.text2 {
+  position: relative;
+  text-align: left;
+  color: transparent;
+  position: absolute;
+  font-size: 4vh;
+  width: 80%;
+  height: 80%;
+  top: 162%;
+  right: 10%;
+  font-style: normal;
+  font-weight: bold;
+  color: #D9D9D9;
+}
+}
+@media only screen and (min-width: 620px) {
+  main .rewards{
+    position: absolute;
     color: white;
-} 
+    font-size: 15px;
+    background-color: #00000031;
+    border: 4px solid #666666;
+    border-radius: 1.5rem ;
+    text-align: center;
+    width: 90%;
+    transform: translate(5%, 44rem);
+  }
+}
+
+  main  .scroll{
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  border: 4px solid transparent;
+  border-radius: 1.5rem ;
+  text-align: center;
+  width: 90%;
+  transform: translate(5%, 57rem);
+}
+  main .text1{
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    width: 70%;
+    transform: translate(21%, 14rem);
+  }
+
+ main .text1 .jumpscare{
+  color: red;
+  background-color: transparent;
+  border: none;
+  font-size: 30px
+}
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 15.6%;
+  left: -250px;
+  background-size: contain;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+  background-color: #343434;
+  backdrop-filter: blur(10px);
+  border-top-right-radius: 36px;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: White;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: rgb(200, 3, 3);
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon{
+  height: 100px;
+  left: 2%;
+  object-fit: cover;
+  position: fixed;
+  top: 1%;
+  width: 100px;
+  background-color:transparent;
+  box-shadow: none;
+  border-radius: 30%;
+  border-color: red;
+  position: absolute;
+
+}
+
+.logo-burger{
+  height: 120px;
+  margin-left: -28%;
+  margin-top: -8%;
+  cursor: pointer;
+}
+.logo-burger:hover{
+  filter: invert(27%) sepia(78%) saturate(7472%) hue-rotate(358deg) brightness(89%) contrast(129%);
+ }
