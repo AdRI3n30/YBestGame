@@ -141,7 +141,7 @@
       border: 8px solid #000000;
       background: #ffffff00;
       mix-blend-mode: plus-darker;
-      transform: translate(20%, -100%);
+      transform: translate(35%, -100%);
     }
   }
   
@@ -158,7 +158,7 @@
     .card{
       width: 350px;
       height: 500px;
-      transform: translate(300%,40%);
+      transform: translate(350%,40%);
       perspective: -500px;
     }
 
@@ -281,7 +281,7 @@
       border-radius: 1.5rem ;
       text-align: center;
       width: 33%;
-      transform: translate(23%, 5rem);
+      transform: translate(39%, 5rem);
     }
 
   main .p1:hover{
@@ -358,18 +358,18 @@
   /* Barre de nav*/
 
   .sidenav {
-    height: 55%;
+    height: 50%;
     width:  230px;
     position: absolute;
     z-index: 1;
     top: 10rem;
     left: -250px;
-    background-image: url(/img/vertical.jpg);
     padding-top: 4%;
     transition: left 0.5s ease;
     background-color: rgba(174, 174, 174, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 36px;
   }
 
   /* Sidenav menu links */
@@ -444,8 +444,16 @@
     top: -1.5rem;
     left: 28rem;
   }
-   
+  .accueil:disabled {
+    pointer-events: none;
+  }
+  
+  .accueil:hover {
+    transform: translateY(-2px);
+  }
+  
   .accueil:active {
     box-shadow: none;
     transform: translateY(0);
   }
+  

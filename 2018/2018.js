@@ -12,6 +12,8 @@ prev.addEventListener('click', function(){
 })
 
 
+
+
 const card = document.querySelectorAll(".card")
 
 card.forEach(el => {

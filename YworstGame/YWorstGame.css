@@ -6,3 +6,190 @@
       opacity: 0;
     }
   }
+
+  body{
+    background-image: url("/img/sallaArcade.jpg");
+    background-size: cover;
+    max-width: 100%;
+  }
+
+  .button {
+    color: #db413b;
+    border: 6px solid #db3e3e;
+    border-radius:15px;
+    padding: 5px 1px;
+    font-size: 25px;
+    font-family: tahoma;
+    letter-spacing:5px;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 10px #db3e3e) drop-shadow(0 0 0px #db3e3e) contrast(2) brightness(2);
+    transition: .5s;
+  }
+  
+  .button:hover {
+    color: black;
+    background-color: #db3e3e;
+    filter: drop-shadow(0 0 20px #db3e3e) contrast(2) brightness(2);
+  }
+
+.image{
+  display: none;
+}
+  
+.videopage{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  display: flex;		
+  flex-wrap: wrap;
+}
+
+.videopage .video{
+  background-color:transparent;
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.carre{
+  width: 100%;
+  height: 70%;    
+}
+
+.test{
+  background-image: url("/img/nul1.jpg");
+  background-size: cover;
+  width: 90%;
+  height: 70%;
+  border-radius: 50px;
+}
+
+.test:hover{
+    box-shadow: 10px 5px 5px rgb(228, 49, 49);
+    cursor: pointer;
+}
+
+.text-ar1{
+  color: rgb(228, 49, 49);
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      #FC0 1px 0 10px,
+      #FC0 1px 0 10px,
+      #FC0 1px 0 10px,
+      #FC0 1px 0 10px,
+      #FC0 1px 0 10px;
+}
+
+
+
+.test2{
+  background-image: url("/img/nul2.jpg");
+  background-size: cover;
+  width: 90%;
+  height: 70%;
+  border-radius: 50px;
+}
+
+.test2:hover{
+    box-shadow: 10px 5px 5px white;
+    cursor: pointer;
+}
+
+.text-ar2{
+  color: white;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      rgb(46, 136, 219) 1px 0 10px,
+      rgb(46, 136, 219) 1px 0 10px,
+      rgb(46, 136, 219) 1px 0 10px,
+      rgb(46, 136, 219) 1px 0 10px,
+      rgb(46, 136, 219) 1px 0 10px;
+
+}
+
+.test3{
+  background-image: url("/img/nul3.jpg");
+  background-size: cover;
+  width: 90%;
+  height: 70%;
+  border-radius: 50px;
+}
+
+.test3:hover{
+    box-shadow: 10px 5px 5px rgb(129, 127, 127);
+    cursor: pointer;
+}
+
+.text-ar3{
+  color: aqua;
+  text-shadow: rgb(129, 127, 127) 1px 0 10px;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      rgb(129, 127, 127) 1px 0 10px,
+      rgb(129, 127, 127) 1px 0 10px,
+      rgb(129, 127, 127) 1px 0 10px,
+      rgb(129, 127, 127) 1px 0 10px,
+      rgb(129, 127, 127) 1px 0 10px;
+
+  
+}
+
+.test4{
+  background-image: url("/img/nul4.jpg");
+  background-size: cover;
+  width: 90%;
+  height: 70%;
+  border-radius: 50px;
+}
+
+.test4:hover{
+    box-shadow: 10px 5px 5px rgba(224, 173, 6, 0.767);
+    cursor: pointer;
+}
+
+.text-ar4{
+  color:  #fff;
+  text-shadow: rgb(240, 106, 53) 1px 0 10px;
+  text-shadow:
+      0 0 7px #ee8128,
+      0 0 10px #ee8128,
+      0 0 21px #fff,
+      rgb(255, 0, 0) 1px 0 10px,
+      rgb(255, 0, 0) 1px 0 10px,
+      rgb(255, 0, 0) 1px 0 10px,
+      rgb(255, 0, 0) 1px 0 10px,
+      rgb(255, 0, 0) 1px 0 10px;
+}
+
+
+h1{
+  color: transparent;
+  text-align: center;
+  font-size: 3.3em;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+
+

@@ -1,6 +1,13 @@
 *{
   margin: 0;
 } 
+body {
+  background-image:url(img/Resident-Evil-Village-ss1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -9,7 +16,7 @@
     background-image:url(img/Resident-Evil-Village-ss1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 100%;
+    background-position: center;
   }
   
   .container {
@@ -47,7 +54,9 @@
 .video-accueil {
   width: 950px;
   height: 500px;
-  transform: translate(22%, 42%);
+  transform: translate(50%, 40%);
+  position: relative;
+  
 }
 
 .accueil{
@@ -55,15 +64,39 @@
   color: transparent;
   position: absolute;
   font-size: 80px;
-  transform: translate(36%, 42%);
+  left: 29%;
+  top: 3%;
   background-color: transparent;
   border: transparent;
   font-style: normal;
   font-weight: bold;
   -webkit-text-stroke: 2px white;
-
-
+  cursor: pointer;
+  text-shadow:
+      0 0 7px #383838,
+      0 0 10px #424242,
+      0 0 21px #f50606,
+      rgb(255, 0, 0) 1px 0 10px,
+      rgb(255, 0, 0) 1px 0 10px,
+      rgb(255, 0, 0) 1px 0 10px,
+      rgb(255, 0, 0) 1px 0 10px,
+      rgb(255, 0, 0) 1px 0 10px;
 }
+.accueil:disabled {
+  pointer-events: none;
+}
+
+.accueil:hover {
+  transform: translateY(-2px);
+}
+
+.accueil:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+
 .azert{
   color: transparent;
   font-style: normal;
@@ -152,7 +185,9 @@
   background-size: contain;
   padding-top: 60px;
   transition: left 0.5s ease;
-  background-color: #343434;
+  background-image: url("/img/REvertical.jpg");
+  background-size: cover;
+  background-position: 65%;
   backdrop-filter: blur(10px);
   border-top-right-radius: 36px;
 }

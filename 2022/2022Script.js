@@ -20,54 +20,31 @@ function closeNav() {
 
 
 
-/*Set the SlideShow in Cadre */
-let slideIndex = 1;
-showSlides(slideIndex);
+/*Set the SlidShow in Cadre_1 */
+let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+})
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-
-}
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1])
+})
 
 
-/*Set the SlideShow in Cadre2 */
-let slideIndex2 = 1;
-showSlides2(slideIndex2);
+/*Set the SlidShow in Cadre_2 */
+let next2 = document.querySelector('.next2')
+let prev2 = document.querySelector('.prev2')
 
-function plusSlides2(n) {
-  showSlides2(slideIndex2 += n);
-}
+next2.addEventListener('click', function(){
+    let items2 = document.querySelectorAll('.item2')
+    document.querySelector('.slid2').appendChild(items2[0])
+})
 
-function currentSlide2(n) {
-  showSlides2(slideIndex2 = n);
-}
-
-function showSlides2(n) {
-  let i;
-  let slides2 = document.getElementsByClassName("Slides2");
-
-  if (n > slides2.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = slides2.length}
-  for (i = 0; i < slides2.length; i++) {
-    slides2[i].style.display = "none";
-  }
-  slides2[slideIndex2-1].style.display = "block";
-
-}
-
+prev2.addEventListener('click', function(){
+    let items2 = document.querySelectorAll('.item2')
+    document.querySelector('.slid2').prepend(items[items2.length - 1])
+})
