@@ -468,3 +468,33 @@ main .p2:hover{
       #FC0 1px 0 10px,
       #FC0 1px 0 10px;
 }
+
+
+.audio-container {
+  position: absolute;
+  margin-left: 95%;
+  margin-top: -5%;
+  
+}
+.musique{
+  background-color: transparent;
+  color: white;
+  border-color: #FC0;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    #FC0 1px 0 10px,
+    #FC0 1px 0 10px,
+    #FC0 1px 0 10px,
+    #FC0 1px 0 10px,
+    #FC0 1px 0 10px;
+}
+
+
+.musique:hover{
+    border-color: black;
+    background-color: #FC0;
+    color:rgb(0, 0, 0);
+}
+

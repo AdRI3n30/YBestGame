@@ -48,3 +48,23 @@ prev2.addEventListener('click', function(){
     let items2 = document.querySelectorAll('.item2')
     document.querySelector('.slid2').prepend(items[items2.length - 1])
 })
+
+
+
+var audio = document.getElementById("myAudio");
+var playPauseBtn = document.getElementById("playPauseBtn");
+
+// Appeler la fonction togglePlay au chargement de la page
+document.addEventListener("DOMContentLoaded", function() {
+    togglePlay();
+});
+
+function togglePlay() {
+    if (audio.paused) {
+        audio.play();
+        playPauseBtn.innerHTML = "Pause";
+    } else {
+        audio.pause();
+        playPauseBtn.innerHTML = "Play";
+    }
+}

@@ -1323,3 +1323,34 @@ h2 {
 
 
 
+
+.audio-container {
+  position: absolute;
+  margin-left: 95%;
+  margin-top: 2%;
+}
+.musique{
+  background-color: transparent;
+  color: white;
+  border-color: aqua;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    aqua 1px 0 10px,
+    aqua 1px 0 10px,
+    aqua 1px 0 10px,
+    aqua 1px 0 10px,
+    aqua 1px 0 10px;
+}
+
+
+.musique:hover{
+    border-color: black;
+    background-color: aqua;
+    color:rgb(0, 0, 0);
+}
+
+
+
+
