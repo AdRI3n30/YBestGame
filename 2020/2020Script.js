@@ -86,3 +86,20 @@ function openNav4() {
 
 
 
+var audio = document.getElementById("myAudio");
+var playPauseBtn = document.getElementById("playPauseBtn");
+
+// Appeler la fonction togglePlay au chargement de la page
+document.addEventListener("DOMContentLoaded", function() {
+    togglePlay();
+});
+
+function togglePlay() {
+    if (audio.paused) {
+        audio.play();
+        playPauseBtn.innerHTML = "Pause";
+    } else {
+        audio.pause();
+        playPauseBtn.innerHTML = "Play";
+    }
+}
