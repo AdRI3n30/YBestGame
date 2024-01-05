@@ -58,7 +58,7 @@
    font-size: 64px;
    font-weight: 400px;
    height: 96px;
-   left: 39%;
+   left: 33%;
    letter-spacing: 0;
    line-height: normal;
    position: absolute;
@@ -221,7 +221,7 @@ a.Accueil{
     border: 8px solid rgb(248, 216, 7);
     background: #ffffff00;
     mix-blend-mode: plus-darker;
-    transform: translate(130%, 40%);
+    transform: translate(108%, 44%);
   }
 }
 
@@ -315,7 +315,7 @@ a.Accueil{
     border: 8px solid rgb(248, 216, 7);
     background: #ffffff00;
     mix-blend-mode: plus-darker;
-    transform: translate(28%, 180%);
+    transform: translate(15%, 200%);
   }
 }
 
@@ -404,7 +404,7 @@ a.Accueil{
   flex-shrink: 0;
   border-radius: 45px;
   border: 8px solid rgb(248, 216, 7);
-  transform: translate(10%, 700%);
+  transform: translate(10%, 550%);
 }
 
 
@@ -418,7 +418,7 @@ main .p1{
   border-radius: 1.5rem ;
   text-align: center;
   width: 33%;
-  transform: translate(39%, 9rem);
+  transform: translate(25%, 9rem);
 }
 
 main .p1:hover{
